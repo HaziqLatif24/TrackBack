@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <!-- Matching Big Logo for Registration Screen -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+            <ImageView
+                android:id="@+id/ivRegisterLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="9dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/trackbacklogo"
+                android:background="#512DA8" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#202124" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register to access the lost and found network system"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#5F6368"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_field"
+            android:textColor="#202124"
+            android:textColorHint="#757575"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="UiTM Student Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_field"
+            android:textColor="#202124"
+            android:textColorHint="#757575"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Choose Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_field"
+            android:textColor="#202124"
+            android:textColorHint="#757575"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- NEW: Confirm Password Field -->
+        <EditText
+            android:id="@+id/etRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_field"
+            android:textColor="#202124"
+            android:textColorHint="#757575"
+            android:textSize="15sp"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sign Up Account"
+            android:background="@drawable/bg_primary_button"
+            app:backgroundTint="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign in here"
+            android:textSize="14sp"
+            android:textColor="#512DA8"
+            android:fontFamily="sans-serif-medium"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>
